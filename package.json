@@ -1,0 +1,20 @@
+{
+  "name": "sky-challenge",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Cloning a simple project to get movies info from movie database api",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Antonio Gabriel <antoniocamposgabriel@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "prettier": "^3.3.3",
+    "sass": "^1.79.5"
+  }
+}

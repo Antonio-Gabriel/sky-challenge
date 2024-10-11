@@ -1,0 +1,23 @@
+.skeleton {
+  width: 100%;
+  height: 12.5rem;
+  background-color: #ccc;
+  border-radius: 0.5rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #eee;
+  }
+}
+
+.lazy-load {
+  display: none;
+}

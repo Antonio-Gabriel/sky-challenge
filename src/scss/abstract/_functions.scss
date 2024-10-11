@@ -1,0 +1,9 @@
+@function ss-var($variable, $keys...) {
+    $value: $variable;
+
+    @each $key in $keys {
+        $value: map-get($value, $key);
+    }
+
+    @return $value;
+}
