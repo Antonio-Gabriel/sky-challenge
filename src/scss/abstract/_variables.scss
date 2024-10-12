@@ -11,8 +11,25 @@ $font-weight: (
 // Colors
 $primary: #f35c58fd;
 $gray: #8f969a;
+$gray-50: #d9d9e0;
 $zinc: #1c1c1c;
 $silver: #F0F2FA;
 $gray-100: #fafaff;
 $white: #ffffff;
 $zinc-100: #606064;
+
+// Breakpoints
+$breakpoint-xs: 30rem;
+$breakpoint-sm: 36rem;
+$breakpoint-md: 48rem;
+$breakpoint-lg: 62rem;
+$breakpoint-xl: 75rem;
+$breakpoint-xxl: 87.5rem;
+
+$black-opacity: #00000099;
+$shadow: 0 0.25rem 0.5rem -0.25rem rgba(0, 0, 0, 0.38);
+$border-radius: 0.25rem;
+$arrow-size: 3.375rem;
+
+$hover-background: #f35c58;
+$hover-border: 0.25rem solid $white;

@@ -1,7 +1,13 @@
 @import './src/scss/base/index';
+@import './src/scss/abstract/index';
 
 .banner {
+  position: relative;
   margin-top: 1.563rem;
+
+  @include respond-to(md) {
+    margin-top: 0.875rem !important;
+  }
 
   .splide__pagination {
     margin-bottom: -2.625rem;
@@ -9,17 +15,24 @@
     .splide__pagination__page {
       height: 0.25rem;
       width: 1rem;
-      border-radius: 0.25rem !important;
-      background: #8f969a;
+      border-radius: $border-radius !important;
+      background: $gray;
 
       &.is-active {
-        background: #f35c58 !important;
+        background: $primary !important;
       }
+    }
+
+    @include respond-to(md) {
+      display: none;
     }
   }
 
   .splide__track {
     height: 24.375rem;
+
+    @include responsive-size(height, 24.375rem, md);
+    @include responsive-size(height, calc(24.375rem - 3rem), sm);
 
     .splide__list {
       gap: 0.5rem;
@@ -27,30 +40,52 @@
     }
 
     .splide__slide {
-      border-radius: 0.25rem;
-      box-shadow: 0 0.25rem 0.5rem -0.25rem rgba(0, 0, 0, 0.38);
+      border-radius: $border-radius;
+      box-shadow: $shadow;
 
       &:not(.is-active.is-visible) {
         width: 43.5rem !important;
         height: 21.875rem !important;
 
+        @include respond-to(md) {
+          width: 33.5rem !important;
+          height: calc(21.875rem - 3rem) !important;
+        }
+
+        @include respond-to(sm) {
+          width: 100vw !important;
+          height: calc(21.875rem - 5rem) !important;
+        }
+
         img {
           width: 100%;
           height: 100%;
           border-radius: 0.25rem;
+          object-fit: cover;
         }
       }
 
       &.is-active.is-visible {
         width: 43.5rem !important;
-        height: 24.375rem;
+        height: 24.375rem !important;
 
-        transition: all 0.5s ease-out;
+        transition: all 0.2s ease;
+
+        @include respond-to(md) {
+          width: 33.5rem !important;
+          height: calc(24.375rem - 3rem) !important;
+        }
+
+        @include respond-to(sm) {
+          width: 100vw !important;
+          height: calc(21.875rem - 5rem) !important;
+        }
 
         img {
           width: 100%;
           height: 100%;
-          border-radius: 0.25rem;
+          border-radius: $border-radius;
+          object-fit: cover;
         }
       }
     }
@@ -58,20 +93,22 @@
 
   .splide__arrows {
     .splide__arrow {
-      width: 3.375rem;
-      height: 3.375rem;
-
-      background: #00000099 60%;
+      @include arrow-styles;
 
       img {
         width: 1.25rem;
         height: 1.25rem;
       }
     }
+
+    @include respond-to(md) {
+      display: none;
+    }
   }
 }
 
 .movies-slides {
+
   .splide__track {
     position: relative;
     width: 100vw;
@@ -79,30 +116,39 @@
   }
 
   .splide__list {
+    // gap: 1rem;
+
     .splide__slide {
-      width: 12.5rem;
-      height: 18.75rem;
+      width: 12.5rem !important;
+      height: 18.75rem !important;
 
       position: relative;
 
-      padding-left: 1rem;
+      // padding-left: 1rem;
+      margin-left: 1rem;
 
-      &.is-active.is-visible {
-        padding-left: 0;
+      @include respond-to(md) {
+        width: 7rem !important;
+        height: 10.5rem !important;
+        padding-left: 0.5rem;
       }
+
+      // &.is-active.is-visible {
+      //   // margin-left: -1rem !important;
+      // }
     }
 
     .slide-content {
       position: relative;
       height: 100%;
 
-      box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.38);
+      box-shadow: $shadow;
 
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 0.25rem;
+        border-radius: $border-radius;
       }
     }
 
@@ -111,7 +157,7 @@
       top: 0.5rem;
       right: 0.5rem;
       border-radius: 50%;
-      border: 0.25rem solid white;
+      border: $border-radius solid white;
 
       padding: 0.625rem;
       display: flex;
@@ -121,17 +167,33 @@
       height: 2.75rem;
 
       cursor: pointer;
-      
+
       transition: all 0.2s ease-out;
 
       &:hover {
         border: 0;
-        background: #f35c58;
+        background: $hover-background;
       }
 
       img {
         width: 1.125rem;
         height: 1.125rem;
+      }
+
+      @include respond-to(md) {
+        top: 0.25rem;
+        right: 0.25rem;
+
+        width: 1.5rem;
+        height: 1.5rem;
+
+        border: 0.1563rem solid $white;
+        padding: 0;
+
+        img {
+          width: 0.625rem;
+          height: 0.625rem;
+        }
       }
     }
   }

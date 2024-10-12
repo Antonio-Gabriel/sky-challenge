@@ -1,0 +1,41 @@
+@import 'variables';
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: calc($breakpoint-xs)) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xl) {
+      @content;
+    }
+  } @else if $breakpoint == xxl {
+    @media (max-width: $breakpoint-xxl) {
+      @content;
+    }
+  }
+}
+
+@mixin responsive-size($property, $value, $breakpoint) {
+  @include respond-to($breakpoint) {
+    #{$property}: $value !important;
+  }
+}
+
+@mixin arrow-styles {
+  width: $arrow-size;
+  height: $arrow-size;
+  background: $black-opacity;
+}
