@@ -107,8 +107,11 @@
   }
 }
 
-.movies-slides {
+.movies {
+  overflow-x: hidden !important;
+}
 
+.movies-slides {
   .splide__track {
     position: relative;
     width: 100vw;
@@ -116,26 +119,19 @@
   }
 
   .splide__list {
-    // gap: 1rem;
-
     .splide__slide {
       width: 12.5rem !important;
       height: 18.75rem !important;
 
       position: relative;
 
-      // padding-left: 1rem;
       margin-left: 1rem;
 
-      @include respond-to(md) {
-        width: 7rem !important;
+      @include respond-to(xs) {
+        width: 9rem !important;
         height: 10.5rem !important;
-        padding-left: 0.5rem;
+        margin-left: 0.5rem;
       }
-
-      // &.is-active.is-visible {
-      //   // margin-left: -1rem !important;
-      // }
     }
 
     .slide-content {
@@ -180,12 +176,12 @@
         height: 1.125rem;
       }
 
-      @include respond-to(md) {
-        top: 0.25rem;
-        right: 0.25rem;
+      @include respond-to(xs) {
+        top: 0.3rem;
+        right: 0.3rem;
 
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1.8rem;
+        height: 1.8rem;
 
         border: 0.1563rem solid $white;
         padding: 0;

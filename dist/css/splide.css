@@ -142,6 +142,10 @@ select {
   }
 }
 
+.movies {
+  overflow-x: hidden !important;
+}
+
 .movies-slides .splide__track {
   position: relative;
   width: 100vw;
@@ -153,11 +157,11 @@ select {
   position: relative;
   margin-left: 1rem;
 }
-@media (max-width: 48rem) {
+@media (max-width: 30rem) {
   .movies-slides .splide__list .splide__slide {
-    width: 7rem !important;
+    width: 9rem !important;
     height: 10.5rem !important;
-    padding-left: 0.5rem;
+    margin-left: 0.5rem;
   }
 }
 .movies-slides .splide__list .slide-content {
@@ -194,12 +198,12 @@ select {
   width: 1.125rem;
   height: 1.125rem;
 }
-@media (max-width: 48rem) {
+@media (max-width: 30rem) {
   .movies-slides .splide__list .cart-icon {
-    top: 0.25rem;
-    right: 0.25rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    top: 0.3rem;
+    right: 0.3rem;
+    width: 1.8rem;
+    height: 1.8rem;
     border: 0.1563rem solid #ffffff;
     padding: 0;
   }
