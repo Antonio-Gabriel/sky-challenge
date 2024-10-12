@@ -38,7 +38,7 @@ select {
 body {
   background: #fafaff;
   font-family: "Roboto", "sans-serif";
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .navbar {
@@ -48,6 +48,14 @@ body {
 .navbar .container {
   padding: 0;
 }
+@media (max-width: 36rem) {
+  .navbar {
+    height: auto;
+  }
+  .navbar .container {
+    padding: 0 0.75rem;
+  }
+}
 .navbar-brand {
   padding: 0;
   margin-right: 2.5rem;
@@ -55,8 +63,15 @@ body {
 .navbar-nav {
   gap: 1rem;
 }
+@media (max-width: 36rem) {
+  .navbar-nav {
+    align-items: start;
+    flex-direction: row;
+  }
+}
 .navbar-nav .nav-item {
   cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 .navbar-nav .nav-item:not(.navbar-nav .nav-item:last-child) {
   width: 1.5rem;
@@ -66,6 +81,12 @@ body {
 }
 .navbar-nav .nav-item:last-child {
   margin-left: 6.125rem;
+}
+@media (max-width: 36rem) {
+  .navbar-nav .nav-item:last-child {
+    margin-left: auto;
+    align-self: flex-end;
+  }
 }
 .navbar-nav .nav-item img {
   width: 1rem;
@@ -87,6 +108,9 @@ body {
   font-weight: bold;
   color: #606064;
 }
+.navbar-nav .nav-item:hover {
+  filter: brightness(0.9);
+}
 .navbar-actions {
   gap: 1.75rem;
 }
@@ -99,11 +123,17 @@ body {
   color: #606064;
   font-weight: bold;
 }
+.navbar .navbar-toggler {
+  border: none !important;
+  outline: 0;
+  box-shadow: none;
+  padding: 0;
+}
 
 .tabs .nav.nav-underline {
   width: 100%;
   background: #ffffff;
-  box-shadow: 0 0.25rem 0.5rem -0.25rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.25rem 0.5rem -0.25rem rgba(0, 0, 0, 0.38);
   display: flex;
   align-items: center;
   gap: 0;
@@ -128,83 +158,184 @@ body {
 .movies {
   margin-top: 6.375rem;
 }
+@media (max-width: 48rem) {
+  .movies {
+    margin-top: 1.5rem;
+  }
+}
 .movies:nth-of-type(n + 3) {
   margin-top: 2.375rem;
 }
 .movies h2 {
   font-size: 1.25rem;
   color: #1c1c1c;
+  font-weight: bold;
 }
 
 footer {
-  margin-top: 120px;
+  margin-top: 7.5rem;
   background: #F0F2FA;
 }
 footer .footer-header {
   height: 4.9375rem;
-  border-top: 1px solid #d9d9e0;
-  border-bottom: 1px solid #d9d9e0;
+  border-top: 0.0625rem solid #d9d9e0;
+  border-bottom: 0.0625rem solid #d9d9e0;
 }
 footer .container {
   padding: 0;
 }
+@media (max-width: 36rem) {
+  footer {
+    margin-top: 5.125rem;
+  }
+  footer .container {
+    padding: 0 0.75rem;
+  }
+}
 footer .footer-content {
-  margin-top: 52px;
+  margin-top: 3.25rem;
+}
+@media (max-width: 48rem) {
+  footer .footer-content {
+    flex-direction: column;
+    margin-top: 1.375rem;
+  }
 }
 footer .footer-content-brand {
-  width: 526px;
+  width: 32.875rem;
+}
+@media (max-width: 48rem) {
+  footer .footer-content-brand {
+    width: auto !important;
+  }
 }
 footer .footer-content-brand .downloads {
   display: flex;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 32px;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 footer .footer-content-brand .downloads span {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
-  color: #66666a;
-  max-width: 340px;
+  color: #606064;
+  max-width: 21.25rem;
+}
+@media (max-width: 48rem) {
+  footer .footer-content-brand .downloads span {
+    color: rgba(243, 92, 88, 0.9921568627);
+    font-size: 1.125rem;
+    max-width: 15rem;
+  }
 }
 footer .footer-content-brand .downloads img {
-  width: 70px;
-  height: 70px;
+  width: 4.375rem;
+  height: 4.375rem;
 }
 footer .footer-content-brand .platforms {
-  gap: 32px;
-  margin-left: 94px;
+  gap: 2rem;
+  margin-left: 5.875rem;
+}
+@media (max-width: 48rem) {
+  footer .footer-content-brand .platforms {
+    display: none !important;
+  }
+}
+@media (max-width: 62rem) {
+  footer .footer-content-brand .platforms {
+    flex-direction: column;
+  }
 }
 footer .footer-content-brand .platforms img {
-  width: 200px;
+  width: 12.5rem;
 }
 footer .footer-content-lists {
-  padding-left: 100px;
-  margin-bottom: 62px;
+  padding-left: 6.25rem;
+  margin-bottom: 3.875rem;
 }
-footer .footer-content-lists .row div:nth-child(n+3) {
-  margin-top: 62px;
+@media (max-width: 48rem) {
+  footer .footer-content-lists {
+    padding-left: 0 !important;
+  }
+}
+@media (max-width: 48rem) {
+  footer .footer-content-lists {
+    padding-left: 1.5rem;
+  }
+}
+footer .footer-content-lists .row div:nth-child(n+5) {
+  margin-top: 3.875rem;
+}
+@media (max-width: 48rem) {
+  footer .footer-content-lists .row div:nth-child(n+5) {
+    margin-top: 0;
+  }
 }
 footer .footer-content-lists .row div {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 48rem) {
+  footer .footer-content-lists .row div {
+    margin-bottom: 2rem;
+  }
+}
 footer .footer-content-lists .row div strong {
-  margin-bottom: 22px;
-  font-size: 18px;
+  margin-bottom: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 500;
-  color: #66666a;
+  color: #606064;
 }
 footer .footer-content-lists .row div li {
   font-weight: 400;
-  color: #66666a;
+  color: #606064;
   cursor: pointer;
+}
+@media (max-width: 48rem) {
+  footer .footer-content-lists .row .list-default {
+    display: none !important;
+  }
+}
+footer .footer-content-lists .row .list-collapse {
+  display: none !important;
+}
+@media (max-width: 48rem) {
+  footer .footer-content-lists .row .list-collapse {
+    display: flex !important;
+  }
+}
+footer .footer-content-lists .row .list-collapse button {
+  padding: 1rem 0.75rem;
+  background: none;
+  border-bottom: 1px solid #d9d9e0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #606064;
+  width: 100% !important;
+}
+footer .footer-content-lists .row .list-collapse ul {
+  margin-top: 1.375rem !important;
+  padding: 0 0.75rem !important;
+}
+footer .footer-content-lists .row .last-collapse {
+  border-bottom: none !important;
+}
+footer .footer-content-lists .row .btn-link {
+  color: #606064;
+  text-decoration: none;
+}
+footer .footer-content-lists .row .collapse {
+  display: none;
+}
+footer .footer-content-lists .row .collapse.show {
+  display: block;
 }
 footer .policies {
   background: #ffffff;
-  padding: 12px 0;
+  padding: 0.75rem 0;
 }
 footer .policies ul {
-  gap: 12px;
+  gap: 0.75rem;
 }
 footer .policies ul li {
   color: #606064;
@@ -212,8 +343,13 @@ footer .policies ul li {
 }
 footer .policies ul li:not(:last-child)::after {
   content: "|";
-  padding-left: 12px;
+  padding-left: 0.75rem;
 }
 footer .copyright p {
   color: #606064;
+}
+@media (max-width: 48rem) {
+  footer .copyright p {
+    text-align: center;
+  }
 }
