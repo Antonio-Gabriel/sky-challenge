@@ -4,7 +4,10 @@
   "type": "module",
   "description": "Cloning a simple project to get movies info from movie database api",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "gulp",
+    "start": "node client.js"
+  },
   "keywords": [],
   "author": "Antonio Gabriel <antoniocamposgabriel@gmail.com>",
   "license": "ISC",
@@ -16,5 +19,8 @@
     "gulp-uglify": "^3.0.2",
     "prettier": "^3.3.3",
     "sass": "^1.79.5"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
   }
 }
