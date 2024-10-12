@@ -11,7 +11,7 @@ Execução do projecto para o ambiente de desenvolvimento:
 ```bash
 npm install
 
-npm dev
+npm run dev
 ```
 
 Execução do projecto para o ambiente em prod:

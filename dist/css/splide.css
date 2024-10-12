@@ -175,6 +175,10 @@ select {
   object-fit: cover;
   border-radius: 0.25rem;
 }
+.movies-slides .splide__list .slide-content img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
 .movies-slides .splide__list .cart-icon {
   position: absolute;
   top: 0.5rem;
