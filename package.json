@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
-    "start": "node client.js"
+    "start": "node client.js",
+    "build": "gulp --tasks"
   },
   "keywords": [],
   "author": "Antonio Gabriel <antoniocamposgabriel@gmail.com>",
