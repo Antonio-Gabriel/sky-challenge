@@ -15,7 +15,6 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      i
       ntegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
@@ -30,8 +29,9 @@
     <!-- <link rel="stylesheet" href="/dist/css/skeleton.css" /> -->
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./src/assets/img/sky-light-default.svg" alt="sky logo" />
@@ -99,6 +99,7 @@
         </div>
       </nav>
     </header>
+    <!-- END HEADER  -->
 
     <nav class="tabs">
       <ul class="nav nav-underline d-flex align-items-center">
@@ -116,58 +117,7 @@
 
     <section class="splide banner" aria-label="movies slides">
       <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="skeleton"></div>
-            <img
-              src="https://img.freepik.com/fotos-gratis/variedade-de-elementos-de-cinema-em-fundo-vermelho-com-espaco-de-copia_23-2148457848.jpg?t=st=1728670880~exp=1728674480~hmac=6a9724d5cc0e4845d9411a98efee5e1fb1657a128646d4a4a3b7a4abc8d2a85f&w=2000"
-              alt="image title"
-              class="lazy-load"
-            />
-          </li>
-          <li class="splide__slide">
-            <div class="skeleton"></div>
-            <img
-              src="https://img.freepik.com/fotos-gratis/variedade-de-elementos-de-cinema-em-fundo-vermelho-com-espaco-de-copia_23-2148457848.jpg?t=st=1728670880~exp=1728674480~hmac=6a9724d5cc0e4845d9411a98efee5e1fb1657a128646d4a4a3b7a4abc8d2a85f&w=2000"
-              alt="image title"
-              class="lazy-load"
-            />
-          </li>
-          <li class="splide__slide">
-            <div class="skeleton"></div>
-            <img
-              src="https://img.freepik.com/fotos-gratis/variedade-de-elementos-de-cinema-em-fundo-vermelho-com-espaco-de-copia_23-2148457848.jpg?t=st=1728670880~exp=1728674480~hmac=6a9724d5cc0e4845d9411a98efee5e1fb1657a128646d4a4a3b7a4abc8d2a85f&w=2000"
-              alt="image title"
-              class="lazy-load"
-            />
-          </li>
-          <li class="splide__slide">
-            <div class="skeleton"></div>
-            <img
-              src="https://img.freepik.com/fotos-gratis/variedade-de-elementos-de-cinema-em-fundo-vermelho-com-espaco-de-copia_23-2148457848.jpg?t=st=1728670880~exp=1728674480~hmac=6a9724d5cc0e4845d9411a98efee5e1fb1657a128646d4a4a3b7a4abc8d2a85f&w=2000"
-              alt="image title"
-              class="lazy-load"
-            />
-          </li>
-
-          <li class="splide__slide">
-            <div class="skeleton"></div>
-            <img
-              src="https://img.freepik.com/fotos-gratis/variedade-de-elementos-de-cinema-em-fundo-vermelho-com-espaco-de-copia_23-2148457848.jpg?t=st=1728670880~exp=1728674480~hmac=6a9724d5cc0e4845d9411a98efee5e1fb1657a128646d4a4a3b7a4abc8d2a85f&w=2000"
-              alt="image title"
-              class="lazy-load"
-            />
-          </li>
-
-          <li class="splide__slide">
-            <div class="skeleton"></div>
-            <img
-              src="https://img.freepik.com/fotos-gratis/variedade-de-elementos-de-cinema-em-fundo-vermelho-com-espaco-de-copia_23-2148457848.jpg?t=st=1728670880~exp=1728674480~hmac=6a9724d5cc0e4845d9411a98efee5e1fb1657a128646d4a4a3b7a4abc8d2a85f&w=2000"
-              alt="image title"
-              class="lazy-load"
-            />
-          </li>
-        </ul>
+        <ul class="splide__list" id="banner-header"></ul>
       </div>
 
       <div class="splide__arrows custom-controls">
@@ -203,156 +153,7 @@
           aria-label="Filmes mais temidos"
         >
           <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Criatura Sombria"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <ul class="splide__list" id="science"></ul>
           </div>
         </section>
       </div>
@@ -369,156 +170,7 @@
           aria-label="Filmes da coletania nacional"
         >
           <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Criatura Sombria"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <ul class="splide__list" id="nacional"></ul>
           </div>
         </section>
       </div>
@@ -535,156 +187,7 @@
           aria-label="Filmes da DC comics"
         >
           <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Criatura Sombria"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <ul class="splide__list" id="comic"></ul>
           </div>
         </section>
       </div>
@@ -701,156 +204,7 @@
           aria-label="filmes da marvel"
         >
           <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Criatura Sombria"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="slide-content">
-                  <img
-                    src="https://img.freepik.com/fotos-gratis/ilustracao-assustadora-de-aracnideo-em-fundo-escuro-gerada-por-ia_188544-19591.jpg?t=st=1728674655~exp=1728678255~hmac=9a99b32d7e45b4db84e36ed4870c1c6f268fbbeaefb79237e0895215533d0a16&w=2000"
-                    alt="A Maldição da Freira"
-                  />
-                  <div class="cart-icon">
-                    <img
-                      src="/src/assets/img/shopping-cart-11.png"
-                      alt="shopping cart icon"
-                    />
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <ul class="splide__list" id="marvel"></ul>
           </div>
         </section>
       </div>
@@ -934,7 +288,9 @@
 
           <div class="footer-content-lists">
             <div class="row d-flex justify-content-end">
-              <div class="col-6 p-0 d-flex flex-column">
+              <div
+                class="col-12 col-md-6 col-lg-6 p-0 d-flex flex-column list-default"
+              >
                 <strong>Sobre</strong>
                 <ul class="m-0 p-0 d-flex flex-column gap-2">
                   <li>Nossa historia</li>
@@ -946,7 +302,33 @@
                 </ul>
               </div>
 
-              <div class="col-6 p-0 d-flex flex-column">
+              <div class="col-12 p-0 d-flex flex-column list-collapse m-0">
+                <button
+                  class="d-inline-flex align-items-center justify-content-between"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#sobre-collapse"
+                >
+                  Sobre
+                  <img
+                    src="/src/assets/img/chevron-down.svg"
+                    alt="arrow down icon"
+                  />
+                </button>
+                <div class="collapse d-md-none" id="sobre-collapse">
+                  <ul class="m-0 p-0 d-flex flex-column gap-2">
+                    <li>Nossa historia</li>
+                    <li>Imprensa</li>
+                    <li>Prémios conquistados</li>
+                    <li>Credenciamento</li>
+                    <li>Trabalhe com a gente</li>
+                    <li>Promoção</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-6 col-lg-6 p-0 d-flex flex-column list-default"
+              >
                 <strong>Nossas responsabilidades</strong>
                 <ul class="m-0 p-0 d-flex flex-column gap-2">
                   <li>Conselho aos usuários</li>
@@ -957,7 +339,37 @@
                 </ul>
               </div>
 
-              <div class="col-6 p-0 d-flex flex-column">
+              <div
+                class="col-12 col-md-6 col-lg-6 p-0 d-flex flex-column list-collapse m-0"
+              >
+                <button
+                  class="d-inline-flex align-items-center justify-content-between"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#nossas-responsabilidades-collapse"
+                >
+                  Nossas responsabilidades
+                  <img
+                    src="/src/assets/img/chevron-down.svg"
+                    alt="arrow down icon"
+                  />
+                </button>
+                <div
+                  class="collapse d-md-none"
+                  id="nossas-responsabilidades-collapse"
+                >
+                  <ul class="m-0 p-0 d-flex flex-column gap-2">
+                    <li>Conselho aos usuários</li>
+                    <li>Pesquisa Anatel</li>
+                    <li>Relatórios de transparência</li>
+                    <li>Responsabilidade Social</li>
+                    <li>Acessibilidade</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-6 col-lg-6 p-0 d-flex flex-column list-default"
+              >
                 <strong>Ajuda</strong>
                 <ul class="m-0 p-0 d-flex flex-column gap-2">
                   <li>Central de ajuda</li>
@@ -965,8 +377,43 @@
                 </ul>
               </div>
 
-              <div class="col-6 p-0 d-flex flex-column">
+              <div
+                class="col-12 col-md-6 col-lg-6 p-0 d-flex flex-column list-collapse m-0"
+              >
+                <button
+                  class="d-inline-flex align-items-center justify-content-between"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#ajuda-collapse"
+                >
+                  Ajuda
+                  <img
+                    src="/src/assets/img/chevron-down.svg"
+                    alt="arrow down icon"
+                  />
+                </button>
+                <div class="collapse d-md-none" id="ajuda-collapse">
+                  <ul class="m-0 p-0 d-flex flex-column gap-2">
+                    <li>Central de ajuda</li>
+                    <li>Manuais</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-6 col-lg-6 p-0 d-flex flex-column list-default"
+              >
                 <strong>SKY Empresas</strong>
+              </div>
+
+              <div
+                class="col-12 col-md-6 col-lg-6 p-0 d-flex flex-column list-collapse m-0"
+              >
+                <button
+                  class="d-inline-flex align-items-center justify-content-between last-collapse"
+                  data-bs-toggle="collapse"
+                >
+                  SKY Empresas
+                </button>
               </div>
             </div>
           </div>
@@ -1012,5 +459,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
     <script src="/dist/js/main.min.js"></script>
+    <script src="/dist/services/services.min.js"></script>
   </body>
 </html>
